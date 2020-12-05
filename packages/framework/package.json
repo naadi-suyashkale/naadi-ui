@@ -1,0 +1,67 @@
+{
+  "name": "@naadi/framework",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/export.js",
+  "dependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.12.7",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13",
+    "@react-keycloak/web": "^3.4.0",
+    "auditjs": "^4.0.20",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "depcheck": "^1.3.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "husky": "^4.3.0",
+    "keycloak-js": "^11.0.3",
+    "moment": "^2.29.1",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-intl": "^5.10.6",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "retire": "^2.2.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "babel --presets @babel/preset-react src --out-dir dist",
+    "audit-dependency": "auditjs ossi",
+    "unused-dependency": "depcheck",
+    "retire": "retire -p",
+    "lint": "eslint './src/**/*.{js,jsx}'",
+    "prepare": "npm run build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

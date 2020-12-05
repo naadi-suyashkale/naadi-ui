@@ -1,0 +1,10 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "start": "lerna exec npm install && lerna run build && lerna run --scope @naadi/server start"
+  },
+  "dependencies": {
+    "lerna": "^3.22.1"
+  }
+}

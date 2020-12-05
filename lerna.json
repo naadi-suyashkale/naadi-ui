@@ -1,0 +1,9 @@
+{
+  "packages": [
+    "packages/server",
+    "packages/packing",
+    "packages/dashboard",
+    "packages/framework"
+  ],
+  "version": "0.0.0"
+}
