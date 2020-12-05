@@ -2,7 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "start": "lerna exec npm install && lerna run build && lerna run --scope @naadi/server start"
+    "start": "lerna run --scope @naadi/server start",
+    "postinstall": "lerna exec npm install && lerna run build"
   },
   "dependencies": {
     "lerna": "^3.22.1"
