@@ -12,7 +12,7 @@ app.use('/dashboard', express.static(path.join(__dirname, '../../dashboard/build
 app.use('/packing', express.static(path.join(__dirname, '../../packing/build')))
 app.use(express.static(path.join(__dirname, `../../${INDEX_PACKAGE}/build`)));
 
-
+console.log('booting server;');
 server.listen(PORT, ()=> {
   console.log(`Server is up and running on port ${PORT};`);
 });
