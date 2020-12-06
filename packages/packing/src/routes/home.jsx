@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { Menu } from '@naadi/framework';
+
 const Home = () => {
   return (
     <div>
-      <a href='/packing' className='mr-2'>
-        Packing
-      </a>
-      <a href='/dashboard'>Dashboard</a>
+      <Menu />
       <div className='text-center p-5'>
         <h2>Packing</h2>
         <Link to='/' className='mr-3'>
