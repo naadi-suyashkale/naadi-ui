@@ -3,7 +3,11 @@
   "private": true,
   "scripts": {
     "start": "lerna run --scope @naadi/server start",
-    "postinstall": "lerna exec npm install && lerna run build"
+    "postinstall": "lerna exec npm install && npm run build",
+    "audit-dependency": "lerna run audit-dependency",
+    "unused-dependency": "lerna run unused-dependency",
+    "lint": "lerna run lint",
+    "build": "lerna run build"
   },
   "dependencies": {
     "lerna": "^3.22.1"

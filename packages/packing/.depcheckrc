@@ -1,0 +1,10 @@
+skip-missing: true
+ignores: [
+  "eslint-*",
+  "prettier-*",
+  "husky",
+  "node-sass",
+  "moment",
+  "@fortawesome/react-fontawesome",
+  "@fortawesome/fontawesome-svg-core"
+]
